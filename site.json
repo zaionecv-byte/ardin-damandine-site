@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "eyebrow": "Fleuriste à Bussigny depuis 2009",
+    "title_line1": "Des fleurs qui racontent",
+    "title_line2": "vos plus beaux moments",
+    "text": "Bouquets et compositions florales confectionnés à la main pour vos mariages, anniversaires, fêtes et derniers hommages. Livraison à Bussigny et dans toute la région lausannoise."
+  },
+  "about": {
+    "eyebrow": "Notre histoire",
+    "title": "Une équipe passionnée, au cœur de Bussigny",
+    "text1": "Le Jardin d'Amandine a vu le jour à Bussigny en 2009. Après quelques années à Crissier suite à la démolition de nos anciens locaux, nous sommes revenus à nos racines en 2019 — et depuis, c'est que du bonheur !",
+    "text2": "Notre équipe chaleureuse vous accompagne dans le choix des fleurs, des couleurs et des parfums pour créer le bouquet parfait, quelle que soit l'occasion.",
+    "timeline": [
+      { "year": "2009", "text": "Ouverture du Jardin d'Amandine à Bussigny" },
+      { "year": "2017", "text": "Démolition des locaux, installation temporaire à Crissier" },
+      { "year": "2019", "text": "Retour définitif à Bussigny, rue de l'Industrie 2" }
+    ]
+  },
+  "terroir": {
+    "eyebrow": "Au-delà des fleurs",
+    "title": "Produits du terroir & idées cadeaux",
+    "text": "En plus de nos créations florales, notre boutique propose une sélection de produits fins du terroir vaudois et italien (Domaine LEOS, Epicerie fine Philippe Rochat, Le Comptoir de Mathilde), ainsi que des idées cadeaux pour accompagner vos bouquets."
+  },
+  "contact": {
+    "address": "Rue de l'Industrie 2, 1030 Bussigny-près-Lausanne",
+    "phone_display": "021 701 16 30",
+    "phone_link": "+41217011630",
+    "email": "info@lejardindamandine.ch"
+  },
+  "hours": [
+    { "day": "Lundi", "time": "Fermé" },
+    { "day": "Mardi – Vendredi", "time": "9h–12h / 14h–18h30" },
+    { "day": "Samedi", "time": "9h–17h" },
+    { "day": "Dimanche", "time": "9h–12h" }
+  ],
+  "footer": {
+    "tagline": "Fleuriste à Bussigny depuis 2009. Bouquets, compositions florales et produits du terroir pour toutes vos occasions."
+  }
+}
