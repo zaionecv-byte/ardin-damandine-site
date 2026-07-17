@@ -1,0 +1,82 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Textes du site"
+    files:
+      - name: "site"
+        label: "Contenu principal"
+        file: "content/site.json"
+        fields:
+          - { label: "Accroche (bandeau)", name: "hero", widget: "object", fields:
+              - { label: "Petit texte au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre — ligne 1", name: "title_line1", widget: "string" }
+              - { label: "Titre — ligne 2", name: "title_line2", widget: "string" }
+              - { label: "Texte d'introduction", name: "text", widget: "text" }
+            }
+          - { label: "À propos", name: "about", widget: "object", fields:
+              - { label: "Petit texte au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Paragraphe 1", name: "text1", widget: "text" }
+              - { label: "Paragraphe 2", name: "text2", widget: "text" }
+              - label: "Étapes (chronologie)"
+                name: "timeline"
+                widget: "list"
+                fields:
+                  - { label: "Année", name: "year", widget: "string" }
+                  - { label: "Texte", name: "text", widget: "string" }
+            }
+          - { label: "Terroir & cadeaux", name: "terroir", widget: "object", fields:
+              - { label: "Petit texte au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Texte", name: "text", widget: "text" }
+            }
+          - { label: "Contact", name: "contact", widget: "object", fields:
+              - { label: "Adresse", name: "address", widget: "string" }
+              - { label: "Téléphone (affiché)", name: "phone_display", widget: "string" }
+              - { label: "Téléphone (lien, format +41...)", name: "phone_link", widget: "string" }
+              - { label: "E-mail", name: "email", widget: "string" }
+            }
+          - label: "Horaires"
+            name: "hours"
+            widget: "list"
+            fields:
+              - { label: "Jour(s)", name: "day", widget: "string" }
+              - { label: "Heures", name: "time", widget: "string" }
+          - { label: "Pied de page", name: "footer", widget: "object", fields:
+              - { label: "Phrase d'accroche", name: "tagline", widget: "text" }
+            }
+
+  - name: "gallery"
+    label: "Galerie photos"
+    files:
+      - name: "gallery"
+        label: "Photos de la galerie"
+        file: "content/gallery.json"
+        fields:
+          - label: "Photos"
+            name: "items"
+            widget: "list"
+            summary: "{{caption}} ({{category}})"
+            fields:
+              - label: "Catégorie"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Mariage", value: "mariage" }
+                  - { label: "Nos arrangements", value: "arrangements" }
+                  - { label: "Fête des mères", value: "fete-meres" }
+                  - { label: "Saint-Valentin", value: "valentin" }
+                  - { label: "Noël", value: "noel" }
+                  - { label: "Dernier hommage", value: "hommage" }
+                  - { label: "Cadeaux", value: "cadeaux" }
+                  - { label: "Terroir", value: "terroir" }
+              - { label: "Légende", name: "caption", widget: "string" }
+              - { label: "Texte alternatif (accessibilité)", name: "alt", widget: "string", required: false }
+              - { label: "Photo (vignette)", name: "thumb", widget: "image" }
+              - { label: "Photo (grand format, pour le clic)", name: "big", widget: "image" }
